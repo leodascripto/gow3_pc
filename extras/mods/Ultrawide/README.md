@@ -10,13 +10,13 @@ proportions and you see more to the sides.
 | Render resolution | Aspect | Status |
 |---|---|---|
 | 3440x1440 | 21:9 | **Tested in game** |
-| 2560x1080 | 21:9 | Not tested |
-| 3840x1600 | 21:9 | Not tested |
+| 2560x1080 | 21:9 | Works (maintainer validation build) |
+| 3840x1600 | 21:9 | Works (maintainer validation build) |
 | 5120x1440 | 32:9 | Works (tester report) |
 | 1920x1200 | 16:10 | Works (tester report; taller than 16:9: see Notes) |
 | 2560x1600 | 16:10 | Works (tester report; taller than 16:9: see Notes) |
 
-Thanks to the players who tested the other sizes in issue #180. If you try one of the untested sizes, please say how it looks (resolution, and whether anything is
+Thanks to the players who tested the sizes in issue #180 and to the maintainer for the validation build. If you try one of them, please say how it looks (resolution, and whether anything is
 cropped, stretched or missing at the edges) in an issue of the project.
 
 ## How to install
@@ -77,6 +77,7 @@ Reported by testers; they come from the game, which is built for 16:9:
 - **Menus** show a slightly darker box over the original 16:9 area, and on the start menu Kratos is half
   covered by the fade. That fade is drawn by the game to delimit its 16:9 screen; it is only cosmetic and
   there is no setting to remove it.
+- **Quicktime event buttons** keep their 16:9 layout (centered on the screen); they are readable and only cosmetic.
 - Gameplay and HUD are fine on every size reported so far.
 
 ---
@@ -101,11 +102,11 @@ tecla Insert). O **Engine frame rate** (60, 120 ou 240) é uma escolha à parte 
 lados (em cima e embaixo no 16:10); as builds anteriores à de teste deixavam o último frame do jogo nessas
 barras. **Os menus são 16:9:** o fundo escurecido de um menu não chega aos lados (nem em cima e embaixo no
 16:10). O 3440x1440 foi testado por quem fez; 5120x1440, 1920x1200 e 2560x1600 foram testados por outros jogadores
-e funcionam; 2560x1080 e 3840x1600 ainda não. Se testar, conte como ficou numa issue do projeto.
+e funcionam; 2560x1080 e 3840x1600 foram validados pelo mantenedor. Se testar, conte como ficou numa issue do projeto.
 Os tamanhos 16:10 (1920x1200 e 2560x1600) só mudam a resolução e o aspect ratio: como a câmera mantém o campo
 horizontal, uma imagem mais alta mostra mais em cima e embaixo, sem deformar.
 
 **Limitações conhecidas (fora do 16:9),** relatadas pelos testers; vêm do próprio jogo, feito para 16:9: as
 telas de logo da abertura ficam esticadas; os vídeos pré-renderizados mantêm o tamanho 16:9 com barras pretas; e
 os menus mostram uma caixa um pouco mais escura sobre a área 16:9 original (um "fade" que o jogo desenha para
-delimitar a tela; é só estético). O gameplay e o HUD estão bons em todos os tamanhos relatados.
+delimitar a tela; é só estético); e os botões de quicktime event ficam em 16:9 no centro da tela (também só estético). O gameplay e o HUD estão bons em todos os tamanhos relatados.

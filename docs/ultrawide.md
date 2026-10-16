@@ -15,14 +15,14 @@ the world keeps its proportions, and the vertical view is the same as at 16:9.
 | Render resolution | Aspect | Status |
 |---|---|---|
 | 3440x1440 | 21:9 | **Tested in game** (3440x1440 monitor, build `6e72330e…`) |
-| 2560x1080 | 21:9 | **Not tested** |
-| 3840x1600 | 21:9 | **Not tested** |
+| 2560x1080 | 21:9 | **Works** (maintainer validation build, RX 6700 XT) |
+| 3840x1600 | 21:9 | **Works** (maintainer validation build, RX 6700 XT) |
 | 5120x1440 | 32:9 | **Works** (tester report, gameplay) |
 | 1920x1200 | 16:10 | **Works** (tester report, with screenshots; taller than 16:9: no field of view change) |
 | 2560x1600 | 16:10 | **Works** (tester report, gameplay; taller than 16:9: no field of view change) |
 
-The author only has a 3440x1440 monitor; 5120x1440, 1920x1200 and 2560x1600 were tested by other players in
-issue #180 (thank you!). 2560x1080 and 3840x1600 come from the same code but nobody has reported them yet.
+The author only has a 3440x1440 monitor; the other sizes were tested by other players in issue #180 and by the
+maintainer in a validation build (thank you!). Gameplay rendering was correct at all six sizes.
 **If you try one, please say how it looks** (an issue):
 the resolution, what you see, and whether anything is cropped, stretched or missing at the edges.
 
@@ -36,6 +36,7 @@ Reported by testers; they come from the game, which is built for 16:9:
 - **Menus** show a slightly darker box over the original 16:9 area, and on the start menu Kratos is half
   covered by the fade. That fade is drawn by the game to delimit its 16:9 screen; it is only cosmetic and
   there is no setting to remove it.
+- **Quicktime event buttons** keep their 16:9 layout (centered on the screen); they are readable and only cosmetic.
 - Gameplay and HUD are fine on every size reported so far.
 
 ## Using it
@@ -118,9 +119,9 @@ mexer na câmera só corta a imagem de 16:9 em cima e embaixo, e ela parece com 
 `Resolution Patch - <largura>x<altura>` do mod corrige isso: a imagem enche a tela, o mundo mantém as
 proporções e a visão vertical é a mesma do 16:9.
 
-O **3440x1440** foi testado por quem fez (só tem esse monitor); 5120x1440, 1920x1200 e 2560x1600 foram testados por
-outros jogadores na issue #180 e funcionam. 2560x1080 e 3840x1600 usam o mesmo código e ninguém relatou ainda; se
-testar, conte como ficou numa issue. Os tamanhos 16:10 (1920x1200 e 2560x1600): como a câmera mantém o campo horizontal, uma imagem mais alta só
+O **3440x1440** foi testado por quem fez (só tem esse monitor); os outros tamanhos foram testados por outros jogadores
+na issue #180 e pelo mantenedor, numa build de validação. O gameplay renderizou corretamente nos seis. Se testar,
+conte como ficou numa issue. Os botões de quicktime event continuam em 16:9, no centro da tela (só estético). Os tamanhos 16:10 (1920x1200 e 2560x1600): como a câmera mantém o campo horizontal, uma imagem mais alta só
 mostra mais em cima e embaixo, então essas entradas mudam apenas a resolução e o aspect ratio.
 
 **Como usar:** coloque o `Ultrawide.zip` (gerado com `python tools/zip_mod.py extras/mods/Ultrawide`) ou a pasta
